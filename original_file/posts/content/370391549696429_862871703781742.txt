@@ -1,0 +1,37 @@
+《大面積燒傷臨床併發症多, 宜儘早召開家庭會議促進醫病溝通, 共同度過難關》
+
+       請大家能夠告訴您身邊的家屬和朋友們, 大面積燒傷在第一時間, 其實就已經決定了未來預後, 而且因為病程中的臨床併發症多, 死亡風險很高, 筆者希望在未來的ㄧ週內, 醫院照顧團隊能夠互相合作, 與家屬們約好時間召開家庭會議, 將臨床預後與家屬期待取得一個合理平衡點。
+
+      筆者在此也呼籲各位家屬們可以了解醫療團隊是盡其所能做照護工作, 請不要再苛責怒告重症醫療人員, 我已經聽到好幾家醫院傳出家屬的情緒反應了!
+
+        大面積燒傷的臨床進程, 根據最新醫學文獻整理如下:
+第一週 燒傷休克
+第二週 心臟休克或是肺部灼傷
+第三週 感染症、敗血症和多重器官衰竭
+
+[死亡的方式]
+早期迅速死亡 58%
+早期器官衰竭 20%
+晚期衰退 16%
+晚期突發死亡  6%
+
+[大面積燒傷死亡率評估公式]
+目前根據國外燒傷資料庫的研究, 可以使用
+Modified Baux score來評估預後, 公式如下:
+年齡+ 燒傷面積%=基本死亡分數
+(若有嗆傷，再加17)
+死亡分數*0.8=死亡率
+
+舉例說明:
+20歲年輕人
+兩個大腿灼傷18%+18%= 36%
++及雙前臂灼傷4.5%*2= 9%
+=基本死亡分數 65
+死亡率是 65*0.8=50%
+(若有嗆傷，再加 65+17=82)
+死亡率 82*0.8=65%
+
+[延伸閱讀]
+1.Osler T, Glance LG, Hosmer DW. Simplified estimates of the probability of death after burn injuries: extending and updating the baux score. J Trauma. 2010 Mar;68(3):690-7.
+2.Swanson JW, Otto AM, Gibran NS, Klein MB, Kramer CB, Heimbach DM, Pham TN.Trajectories to death in patients with burn injury.J Trauma Acute Care Surg. 2013 Jan;74(1):282-8.
+3.Williams DJ, Walker JD. A nomogram for calculation of the Revised Baux Score. Burns. 2015 Feb;41(1):85-90.

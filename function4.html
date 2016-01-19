@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>EMpact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-titillium-250.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+<style type="text/css">${demo.css}</style>	
+<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+
+        chart: {
+            type: 'bubble',
+            plotBorderWidth: 1,
+            zoomType: 'xy'
+        },
+
+        legend: {
+            enabled: false
+        },
+
+        title: {
+            text: 'Hot Words About Medical Treatment Field Topic'
+        },
+
+        subtitle: {
+            text: 'Hot Words Chosed From: <a href="https://www.facebook.com/TMAL119/?fref=ts">  醫勞盟  </a>  And   <a href="https://www.facebook.com/ntuhhint/?fref=ts">用心守護-蔡宏斌</a>'
+        },
+
+        xAxis: {
+            gridLineWidth: 1,
+            title: {
+                
+            },
+            labels: {
+                
+            },
+            plotLines: [{
+                color: 'black',
+                dashStyle: 'dot',
+                width: 2,
+                value: 65,
+                label: {
+                    rotation: 0,
+                    y: 15,
+                    style: {
+                        fontStyle: 'italic'
+                    },
+                  
+                },
+                zIndex: 3
+            }]
+        },
+
+        yAxis: {
+            startOnTick: false,
+            endOnTick: false,
+            title: {
+               
+            },
+            labels: {
+             
+            },
+            maxPadding: 0.2,
+            plotLines: [{
+                color: 'black',
+                dashStyle: 'dot',
+                width: 2,
+                value: 50,
+                label: {
+                    align: 'right',
+                    style: {
+                        fontStyle: 'italic'
+                    },
+                    
+                    x: -10
+                },
+                zIndex: 3
+            }]
+        },
+
+        tooltip: {
+            useHTML: true,
+            headerFormat: '<table>',
+            pointFormat: '<tr><th colspan="2"><h3>{point.country}</h3></th></tr>' +
+              
+                '<tr><th>Influence Weight(f(likes+comments+shares)):</th><td>{point.g}</td></tr>',
+            footerFormat: '</table>',
+            followPointer: true
+        },
+
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }
+        },
+
+        series: [{
+            data: [
+                { x: 95, y: 95, z: 13.8, g:8216,name: '病', country: '病' },
+                { x: 86.5, y: 102.9, z: 14.7,g:4056, name: '病人', country: '病人' },
+                { x: 80.8, y: 91.5, z: 15.8, g:9304,name: '台灣', country: '台灣' },
+                { x: 80.4, y: 102.5, z: 12, g:3196,name: '醫護', country: '醫護' },
+                { x: 80.3, y: 86.1, z: 11.8,g:3296, name: '我們', country: '我們' },
+                { x: 78.4, y: 70.1, z: 16.6,g:8216, name: '病', country: '病' },
+                { x: 74.2, y: 68.5, z: 14.5,g:4132,name: '的醫', country: '的醫' },
+                { x: 73.5, y: 83.1, z: 10, g:2292,name: '病患', country: '病患' },
+                { x: 71, y: 93.2, z: 24.7, g:25480,name: '人員', country: '人員' },
+                { x: 69.2, y: 57.6, z: 10.4, g:3108,name: '急診', country: '急診' },
+                { x: 68.6, y: 20, z: 16, g:6800,name: '法', country: '法' },
+                { x: 65.5, y: 126.4, z: 35.3,g:31360, name: '醫院', country: '醫院' },
+                { x: 65.4, y: 50.8, z: 28.5, g:39060,name: '醫療', country: '醫療' },
+                { x: 63.4, y: 51.8, z: 15.4, g:3544,name: '健保', country: '健保' },
+                { x: 64, y: 82.9, z: 31.3, g:31360,name: '醫師', country: '醫師' }
+            ]
+        }]
+
+    });
+});
+		</script>
+
+
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="#"><span>EMpact</span> <small>Information Retrieve </small></a></h1>
+      </div>
+      <div class="menu_nav">
+        <ul>
+          <li ><a href="index.html"><span>Overview </span></a></li>
+          <li ><a href="function2.html"><span>Subject</span></a></li>
+          <li ><a href="function3.html"><span>Hospital</span></a></li>
+          <li class="active"><a href="function4.html"><span>Hot Words</span></a></li>
+          <li ><a href="function5.html"><span>Top Articles</span></a></li>
+        </ul>
+      </div>
+     
+	 <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"><a href="#"><img src="images/slide1.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="images/slide2.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="images/slide3.jpg" width="935" height="307" alt="" /></a></div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+ <div class="content">
+
+<div>
+<p>
+</p>
+</div>
+
+
+<div id="container" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto;"></div>
+
+
+
+<div>
+<p>
+</p>
+</div>
+ 
+ <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2><span>Image</span> Gallery</h2>
+        <a href="#"><img src="images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
+       <div class="col c2">
+        <h2><span>Services</span> Overview</h2>
+        <p>我們希望藉由分析醫療相關的粉絲專頁內容，以了解最近探討的主題分類、最常提及的醫院、使用者在對於散佈內容有著不同參與程度時所產生出最具影響力的議題，以及這些主題中所具有影響力的關鍵詞彙。</p>
+        <ul class="fbg_ul">
+		  <li><a href="index.html">議題分佈匯總</a></li>
+          <li><a href="function2.html">醫療議題熱度</a></li>
+		  <li><a href="function3.html">具代表性醫院</a></li>
+          <li><a href="function4.html">醫療議題熱詞</a></li>
+		  <li><a href="function5.html">醫療最熱文章</a></li>
+        </ul>
+      </div>
+      <div class="col c3">
+        <h2><span>Contact</span> Us</h2>
+        <p>对于本程式有任何问题，欢迎来邮件交流</p>
+        <p class="contact_info"> <span>Address:</span> 台湾台北市台湾大学<br />
+		<p class="contact_info"> <span>Declare:</span> Information Retrieve Course Project<br />
+		<p class="contact_info"> <span>Group:</span> 張郁卿 陳昱喬 李桂欽<br />
+		<p class="contact_info"> <span>Create Time:</span> 2016-01-18<br />
+        <p class="contact_info"> <span>E-mail:</span> <a href="#">R04725050@ntu.edu.tw</a> </p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+ 
+
+
+
+ <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; <a href="#">Domain Name</a>. All Rights Reserved</p>
+      <p class="rf">Get More <a target="_blank" href="http://www.free-css.com/">Free CSS Templates</a> By <a target="_blank" href="http://www.dreamtemplate.com/">DreamTemplate</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

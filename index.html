@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>EMpact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-titillium-250.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+<style type="text/css">${demo.css}</style>
+<script type="text/javascript">
+$(function () {
+    // Create the chart
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Subject About Medical Treatment Field'
+        },
+        subtitle: {
+            text: 'Data Source: <a href="https://www.facebook.com/TMAL119/?fref=ts">  醫勞盟  </a>  And   <a href="https://www.facebook.com/ntuhhint/?fref=ts">用心守護-蔡宏斌</a>.'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Total percent market share'
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}(effect force )'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b>(= log(f(likes,shares,comments),10)<br/>'
+        },
+
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: '醫學人文',
+                y: 18.901149735592,
+                drilldown: '醫學人文'
+            }, {
+                name: '病人健康教育',
+                y:  18.447841965891,
+                drilldown: '病人健康教育'
+            }, {
+                name: '品質',
+                y: 17.431628182621,
+                drilldown: '品質'
+            }, {
+                name: '法律',
+                y: 17.375752183431,
+                drilldown: '法律'
+            }, {
+                name: '倫理',
+                y: 17.32238590885,
+                drilldown: '倫理'
+            }, {
+                name: '其他',
+                y: 29.11497355923,
+                drilldown: null
+            }]
+        }],
+        drilldown: {
+            series: [{
+                name: 'Microsoft Internet Explorer',
+                id: 'Microsoft Internet Explorer',
+                data: [
+                    [
+                        'v11.0',
+                        24.13
+                    ],
+                    [
+                        'v8.0',
+                        17.2
+                    ],
+                    [
+                        'v9.0',
+                        8.11
+                    ],
+                    [
+                        'v10.0',
+                        5.33
+                    ],
+                    [
+                        'v6.0',
+                        1.06
+                    ],
+                    [
+                        'v7.0',
+                        0.5
+                    ]
+                ]
+            }, {
+                name: 'Chrome',
+                id: 'Chrome',
+                data: [
+                    [
+                        'v40.0',
+                        5
+                    ],
+                    [
+                        'v41.0',
+                        4.32
+                    ],
+                    [
+                        'v42.0',
+                        3.68
+                    ],
+                    [
+                        'v39.0',
+                        2.96
+                    ],
+                    [
+                        'v36.0',
+                        2.53
+                    ],
+                    [
+                        'v43.0',
+                        1.45
+                    ],
+                    [
+                        'v31.0',
+                        1.24
+                    ],
+                    [
+                        'v35.0',
+                        0.85
+                    ],
+                    [
+                        'v38.0',
+                        0.6
+                    ],
+                    [
+                        'v32.0',
+                        0.55
+                    ],
+                    [
+                        'v37.0',
+                        0.38
+                    ],
+                    [
+                        'v33.0',
+                        0.19
+                    ],
+                    [
+                        'v34.0',
+                        0.14
+                    ],
+                    [
+                        'v30.0',
+                        0.14
+                    ]
+                ]
+            }, {
+                name: 'Firefox',
+                id: 'Firefox',
+                data: [
+                    [
+                        'v35',
+                        2.76
+                    ],
+                    [
+                        'v36',
+                        2.32
+                    ],
+                    [
+                        'v37',
+                        2.31
+                    ],
+                    [
+                        'v34',
+                        1.27
+                    ],
+                    [
+                        'v38',
+                        1.02
+                    ],
+                    [
+                        'v31',
+                        0.33
+                    ],
+                    [
+                        'v33',
+                        0.22
+                    ],
+                    [
+                        'v32',
+                        0.15
+                    ]
+                ]
+            }, {
+                name: 'Safari',
+                id: 'Safari',
+                data: [
+                    [
+                        'v8.0',
+                        2.56
+                    ],
+                    [
+                        'v7.1',
+                        0.77
+                    ],
+                    [
+                        'v5.1',
+                        0.42
+                    ],
+                    [
+                        'v5.0',
+                        0.3
+                    ],
+                    [
+                        'v6.1',
+                        0.29
+                    ],
+                    [
+                        'v7.0',
+                        0.26
+                    ],
+                    [
+                        'v6.2',
+                        0.17
+                    ]
+                ]
+            }, {
+                name: 'Opera',
+                id: 'Opera',
+                data: [
+                    [
+                        'v12.x',
+                        0.34
+                    ],
+                    [
+                        'v28',
+                        0.24
+                    ],
+                    [
+                        'v27',
+                        0.17
+                    ],
+                    [
+                        'v29',
+                        0.16
+                    ]
+                ]
+            }]
+        }
+    });
+});
+		</script>
+
+
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="#"><span>EMpact</span> <small>Information Retrieve </small></a></h1>
+      </div>
+      <div class="menu_nav">
+       <ul>
+          <li class="active"><a href="index.html"><span>Overview </span></a></li>
+          <li ><a href="function2.html"><span>Subject</span></a></li>
+          <li ><a href="function3.html"><span>Hospital</span></a></li>
+          <li ><a href="function4.html"><span>Hot Words</span></a></li>
+          <li ><a href="function5.html"><span>Top Articles</span></a></li>
+        </ul>
+      </div>
+     
+	 <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"><a href="#"><img src="images/slide1.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="images/slide2.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="images/slide3.jpg" width="935" height="307" alt="" /></a></div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+ <div class="content">
+
+ <div>
+<p>
+</p>
+</div>
+
+
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+
+
+<div>
+<p>
+</p>
+</div>
+ 
+ <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2><span>Image</span> Gallery</h2>
+        <a href="#"><img src="images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
+      <div class="col c2">
+        <h2><span>Services</span> Overview</h2>
+        <p>我們希望藉由分析醫療相關的粉絲專頁內容，以了解最近探討的主題分類、最常提及的醫院、使用者在對於散佈內容有著不同參與程度時所產生出最具影響力的議題，以及這些主題中所具有影響力的關鍵詞彙。</p>
+        <ul class="fbg_ul">
+		  <li><a href="index.html">議題分佈匯總</a></li>
+          <li><a href="function2.html">醫療議題熱度</a></li>
+		  <li><a href="function3.html">具代表性醫院</a></li>
+          <li><a href="function4.html">醫療議題熱詞</a></li>
+		  <li><a href="function5.html">醫療最熱文章</a></li>
+        </ul>
+      </div>
+      <div class="col c3">
+        <h2><span>Contact</span> Us</h2>
+        <p>对于本程式有任何问题，欢迎来邮件交流</p>
+        <p class="contact_info"> <span>Address:</span> 台湾台北市台湾大学<br />
+		<p class="contact_info"> <span>Declare:</span> Information Retrieve Course Project<br />
+		<p class="contact_info"> <span>Group:</span> 張郁卿 陳昱喬 李桂欽<br />
+		<p class="contact_info"> <span>Create Time:</span> 2016-01-18<br />
+        <p class="contact_info"> <span>E-mail:</span> <a href="#">R04725050@ntu.edu.tw</a> </p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+ 
+
+
+
+ <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; <a href="#">Domain Name</a>. All Rights Reserved</p>
+      <p class="rf">Get More <a target="_blank" href="http://www.free-css.com/">Free CSS Templates</a> By <a target="_blank" href="http://www.dreamtemplate.com/">DreamTemplate</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
